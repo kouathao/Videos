@@ -8,7 +8,7 @@ class App extends Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit("buildings");
+    this.onTermSubmit("Old Town Road");
   }
   onTermSubmit = async term => {
     const response = await youtube.get("/search", {
